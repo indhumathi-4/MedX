@@ -1,0 +1,129 @@
+
+html {
+    font-family: "Poppins", sans-serif;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: contain;
+  }
+  
+input::placeholder { font: inherit; }
+/* .grey {
+    background-color: rgb(205, 244, 255);
+    width: 720px;
+    height: 580.5px;
+    margin-left: 550px;
+    margin-top: -6px;
+} */
+
+/* .grey img {
+    width: 900px;
+    height: 550px;
+    margin-left: -350px;
+} */
+ body{
+    position: fixed;
+ }
+ .bg img{
+    width: 1282px;
+    height: 585px;
+    margin-left: -10px;
+    margin-top: -55px;
+   margin-bottom: -95px;
+   padding-bottom:0px ;
+
+ }
+
+.reg h1{
+    margin-top: -520px;
+    margin-left: 50px;
+    /* margin-bottom: -100px; */
+}
+
+.reg p {
+    color: gray;
+    margin-top: -25px;
+    margin-left: 50px;
+}
+.reg label{
+    margin-top: -50px;
+    margin-left: -75px;
+}
+
+.reg input {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -23px;
+}
+
+.reg input::placeholder {
+    transform: translateY(5px);
+    padding-left: 5px;
+}
+
+.checkbox label input {
+    margin-left: -145px;
+}
+
+.checkbox label h5 {
+    margin-left: 25px;
+    margin-top: -25px;
+    color: gray;
+}
+
+button {
+    background-color: rgb(139, 230, 255);
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+    width: 300px;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        margin-left: -5px;
+
+}
+button:hover {
+    background-color: rgb(253, 254, 255);
+    color: rgb(139, 230, 255);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.up {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: -500.5px;
+}
+
+.up a {
+    text-decoration: none;
+}
+
+.up b {
+    margin-left: 5px;
+    color: rgb(253, 255, 255);
+    cursor: pointer;
+    
+    
+}
+.up b:hover {
+    color: rgb(139, 230, 255); /* Change color on hover */
+}
+.logo img{
+    transform: translateY(-570px);
+    height: 50px;
+    width: 50px;
+    margin-left: 1190px;
+    
+}

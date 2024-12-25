@@ -1,0 +1,173 @@
+/* General Button Styles */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(139, 230, 255);;
+    color: Black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* body{
+    background-image:url('images/GeneralPhysician.jpg') ;
+    background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position:top;
+ 
+ 
+} */
+.bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video covers the background without distortion */
+            z-index: -1; /* Send the video behind other content */
+        }
+
+button:hover {
+    background-color: white;
+    color: rgb(121, 217, 244);
+}
+
+/* Page Layout */
+.page {
+    text-align: center;
+    margin-top: 50px;
+    color:rgb(175, 243, 250);
+}
+
+/* Doctor Cards */
+.doctor-card {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    color:rgb(175, 243, 250);
+    background-color: rgba(21, 16, 16, 0.571);
+   
+    
+}
+.doctor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(167, 30, 30, 0.2);
+
+}
+/* .doctor-card:hover .doctor-image {
+    opacity: 0.9;
+} */
+
+.doctor-image {
+    width: 180px;
+    height: 160px;
+    border-radius: 20px;
+}
+
+.doctor-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Appointment Details */
+.appointment-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.appointment-details p {
+    margin: 5px 0;
+}
+
+/* Appointments List */
+#appointments-list {
+    margin-top: 20px;
+}
+#home-page{
+    display: grid;
+  grid-auto-flow: row; /* Arranges items in rows */
+  gap: 10px;
+  h1{
+    color:aliceblue;
+  }
+
+  
+}
+#home-page button {
+    padding: 10px 20px;
+    margin-left: 640px;
+    background-color: rgb(139, 230, 255);
+    color: Black;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width:200px;
+    height: 90px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+#home-page button:hover {
+    background-color: white;
+    color: rgb(121, 217, 244);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 7px  rgb(121, 217, 244);
+}
+
+#appointmentForm{
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+   gap:5px;
+    max-width: 400px;
+    margin-left: 600px;
+    
+    input{
+        width:350px;
+        height:40px;
+        border-radius: 10px;
+        background-color: rgb(204, 235, 244);
+
+    }
+    
+    label{
+        margin-right: 350px;
+            color:aliceblue; 
+    
+    }
+   
+}
+#appointmentForm button{
+        width:350px;
+        height:50px;
+        border-radius: 10px;
+        margin-left: -0px;
+
+    }
+ input::placeholder{
+        text-align:left;
+        
+    }
+#doctor-list{
+    h1{
+        color:aliceblue; 
+    }
+}
+#appointment-page{
+    h1{
+        color:aliceblue; 
+    }
+}
+#status-details{
+    background-color: rgba(116, 103, 103, 0.571);
+    width: 500px;
+    margin-left: 500px;
+}
+#appointments-list{
+    background-color: rgba(116, 103, 103, 0.571);
+    width: 500px;
+    margin-left: 500px;
+}
+}
+   
+

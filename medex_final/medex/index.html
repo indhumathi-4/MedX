@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedX Pharmacy</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div id="bg">
+    <header>
+        <h1>Welcome to MedX Pharmacy</h1>
+    </header>
+    <input type="text" id="searchBar" placeholder="Search for a medicine..." onkeyup="searchMedicine()">
+<img src="img/search-heart.svg" id="sea"alt="logo">
+    <section id="medicine-list">
+        <h2>List of Medicines</h2>
+        <div class="medicine1" onclick="showDetails('Paracetamol', 50, 'Effective for fever and pain relief')">
+            <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (3).png" alt="Paracetamol">
+            <h3>Paracetamol</h3>
+            <p>₹50</p>
+        </div>
+        <div class="medicine1" onclick="showDetails('Vitamin E', 100, 'Treatment of cancer and for prevention or treatment of acne, aging, loss of hair, bee stings, liver spots on the hands')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (6).png" alt="Vitamin E">
+          <h3>Vitamin E</h3>
+          <p>₹100</p>
+        </div>
+        <div class="medicine1" onclick="showDetails('Polyfer FA', 250, 'This medicine is an iron supplement used to treat iron deficiency')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (7).png" alt="Polyfer FA">
+          <h3>Polyfer FA</h3>
+          <p>₹250</p>
+        </div>
+        <div class="medicine1" onclick="showDetails('Nobel Cold', 200, 'Relieves symptoms of the common cold, such as a blocked nose, runny nose, watery eyes, sneezing, and congestion or stuffiness')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (4).png" alt="Nobel Cold">
+          <h3>Nobel Cold</h3>
+          <p>₹200</p>
+        </div>
+        
+        <div class="medicine1" onclick="showDetails('Milam-15', 55, 'Used to produce sleepiness or drowsiness and to relieve anxiety before surgery or certain procedures.')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (8).png" alt="Milam-15">
+          <h3>Milam-15</h3>
+          <p>₹55</p>
+        </div>
+        <div class="medicine2" onclick="showDetails('Bro-Zedex', 150, 'Used to treat cough associated with vicious and excessive mucus in patients with asthma and COPD (chronic obstructive pulmonary disorder).')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (5).png" alt="Bro-Zedex">
+          <h3>Bro-Zedex</h3>
+          <p>₹150</p>
+        </div>
+        <div class="medicine2" onclick="showDetails('Johnsons Baby Shampoo', 200, 'Designed to gently clean and care for a babys hair and scalp')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (12).png" alt="Johnson's Baby Shampoo">
+          <h3>Johnson's Baby Shampoo </h3>
+          <p>₹200</p>
+        </div>
+        <div class="medicine2" onclick="showDetails('2blink', 100, 'For the temporary relief of burning, irritation and discomfort due to dryness of the eye or exposure to wind or sun.')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (10).png" alt="2blink">
+          <h3>2blink</h3>
+          <p>₹100</p>
+        </div>
+       
+        <div class="medicine4" onclick="showDetails('Volini', 70, 'Used to relieve pain from musculoskeletal conditions')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (11).png" alt="Volini">
+          <h3>Volini</h3>
+          <p>₹70</p>
+        </div>
+        <div class="medicine3" onclick="showDetails('Visol Gel', 80, 'Used to relieve eye soreness and dryness by lubricating, soothing, and moistening the surface of the eye.')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (9).png" alt="Visol Gel">
+          <h3>Visol Gel</h3>
+          <p>₹80</p>
+        </div>
+        
+        <div class="medicine1" onclick="showDetails('Arinac', 120, 'Relieves symptoms of common cold such as blocked nose, runny nose, watery eyes, sneezing, and congestion or stuffiness.')">
+          <img src="Project 2(img)\Project 2(img)\Herbal medicine with leaf logo (15).png" alt="Arinac">
+          <h3>Arinac</h3>
+          <p>₹120</p>
+        </div>
+        <!-- Add more medicine blocks as needed -->
+    </section>
+
+    <button class="view-order-btn" onclick="viewOrder()">View Previous Order</button>
+     <!-- Diwali Offer Notification -->
+     <div id="diwali-offer" class="notification">🎉 Diwali Offer: Get 20% off on all medicines! 🎉</div>
+    </div>
+    <!-- Newsletter Section -->
+    <section id="newsletter">
+      <div id = "popup">
+       <span id="delete-symbol">&times;</span>
+      <img src="img/Blue Professional Doctor YouTube Thumbnail.png" id = "pic" alt ="Doc">
+      
+        <h3>Subscribe to our Newsletter</h3>
+        <p>Subscribe to<b> MEDX</b> to get discounts and daily updates</p>
+        <input type="email" id="email" placeholder="             Enter your email" required><br>
+        <button onclick="subscribe()"><b>Subscribe</b></button>
+      </div>
+    </section>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

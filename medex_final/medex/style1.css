@@ -1,0 +1,222 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  transition: filter 0.3s ease;
+}
+
+header {
+  background-color: rgb(139, 230, 255);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: -10px;
+  margin-left: -8PX;
+  margin-right: -8PX;
+  margin-bottom: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
+#medicine-list, #medicine-details, #checkout, #order-summary {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.medicine {
+  display: inline-block;
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  img{
+    width:150px;
+    height:150px;
+  }
+}
+.medicine1 {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  img{
+    width:200px;
+    height:200px;
+  }
+}
+.medicine2 {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  img{
+    width:200px;
+    height:200px;
+  }
+}
+.medicine3 {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  img{
+    width:200px;
+    height:200px;
+  }
+}
+.medicine4 {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  
+  img{
+    width:280px;
+    height:220px;
+  }
+}
+.medicine:hover {
+  transform: scale(1.05);
+}
+
+.view-order-btn {
+  padding: 10px 20px;
+  background-color:rgb(139, 230, 255) ;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 550px;
+  transform: translateY(-10px);
+}
+
+.view-order-btn:hover {
+  background-color: #94cff4;
+  color: black;
+}
+
+#diwali-offer {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  background-color: #ff7700;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  animation: slideIn 2s ease;
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+#newsletter{
+  display: none; /* Hidden by default */
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -1200px;
+  opacity: 0; /* Start invisible */
+  transition: opacity 1s ease, bottom 1s ease; /* Smooth fade-in effect */
+  z-index: 1000;
+  img{
+    width:700px;
+    height:450px;
+    border-radius: 13px;
+
+  }
+  h3{
+    margin-top: -300px;
+    margin-left: 60px;
+  }
+  p{
+    font-style: inherit;
+    font-family:sans-serif;
+    color: white;
+    font-size: 12px;
+    margin-left: 60px;
+  }
+  input{
+margin-left: 60px;
+border: 0;
+height:30px;
+border-radius: 20px;
+width: 250px;
+margin-top: 10px;
+  }
+  button{
+/* margin-bottom: 10px; */
+margin-left: 110px;
+margin-top: 47px;
+background-color: transparent;
+border:none;
+color: rgb(6, 6, 6);
+
+
+  }
+  button:hover{
+    color:white;
+  }
+  
+}
+#delete-symbol{
+  font-size: 18px;
+  position: absolute;
+  margin-left: 670px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color:#333;
+ 
+
+}
+
+.btn-close{
+  color:black;
+}
+#delete-symbol:hover{
+  color: rgb(255, 255, 255);
+}
+#newsletter.show {
+  opacity: 1; /* Fade in when "show" class is added */
+  display: block;
+}
+#bg {
+  transition: filter 0.3s ease;
+}
+.blur {
+  filter: blur(5px); /* Adjust blur intensity as needed */
+}
+#sea{
+
+}
+#searchBar{
+  margin-left: 500px;
+  padding-left: 20px;
+}

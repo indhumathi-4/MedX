@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        #map {
+            height: 300px; /* Set the height of the map */
+            width: 100%; /* Set the width of the map */
+            margin-top: 20px;
+            border: 1px solid #ccc; /* Optional: Add a border around the map */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <section id="checkout">
+        <h3>Delivery Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" minlength="10" maxlength="10" pattern="\d{10}" required><br>
+
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" required><br>
+
+        <!-- Map for location selection -->
+        <div id="map"></div>
+
+        <!-- Payment Methods -->
+        <h3>Payment Method</h3>
+        <input type="radio" id="cash" name="payment" value="Cash" checked>
+        <label for="cash">Cash</label><br>
+        <input type="radio" id="gpay" name="payment" value="GPay">
+        <label for="gpay">GPay</label><br>
+
+        <button onclick="placeOrder()">Place Order</button>
+    </section>
+
+    <button onclick="goBack()">Go Back</button>
+
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBptX9IkbGzzZdTtAiKnuN6u4Ag6-MkclE&callback=initMap">
+  </script>
+  
+    <script src="script.js"></script>
+</body>
+</html>

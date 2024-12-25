@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video class="bg-video" autoplay loop muted>
+        <source src="videos/Appoinment.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Home Page (Manual Visiting / Virtual Visiting) -->
+    <div id="home-page" class="page">
+        
+        <h1>Select Your Visit Type</h1>
+        <button onclick="showDoctors('manual')">Manual Visiting</button>
+        <button onclick="showDoctors('virtual')">Virtual Visiting</button>
+        <button onclick="navigateToAppointmentsPage()">View Appointments</button>
+    </div>
+
+    <!-- Doctor List Page -->
+    <div id="doctor-list" class="page" style="display: none;">
+        <h1>Select a Doctor</h1>
+        <div id="doctors"></div>
+        <button onclick="goBackToHome()">Back</button>
+    </div>
+
+    <!-- Appointment Booking Page -->
+    <div id="appointment-page" class="page" style="display: none;">
+        <h1>Book Appointment</h1>
+        <form id="appointmentForm">
+
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email"><b>EmailID:</b></label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <label for="contact"><b>PhoneNumber:</b> </label>
+            <input type="tel" id="phone" placeholder="Enter Phone Number" required>
+
+            <label for="date"><b>Date:</b></label>
+            <input type="date" id="date" required>
+
+            <label for="time"><b>Time:</b></label>
+            <input type="time" id="time" required>
+           
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <button onclick="goBackToDoctorList()">Back</button>
+    </div>
+
+    <!-- Appointment Status Page -->
+    <div id="status" class="page" style="display: none;">
+        <h1>Appointment Status</h1>
+        <div id="status-details"></div>
+        <button onclick="goBackToAppointment()">Back</button>
+        <button onclick="navigateToAppointmentsPage()">View Appointments</button>
+    </div>
+
+    <!-- View Appointments Page -->
+    <div id="appointments-page" class="page" style="display: none;">
+        <h1>All Appointments</h1>
+        <div id="appointments-list"></div>
+        <button onclick="goBackToHomeFromAppointments()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

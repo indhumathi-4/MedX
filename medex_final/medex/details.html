@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Details</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Medicine Details</h1>
+    </header>
+
+    <section id="medicine-details">
+        <h2 id="medicine-name"></h2>
+        <p id="medicine-description"></p>
+        <p><span id="medicine-price"></span></p>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1">
+        <button onclick="addToCart()">Add to Cart</button>
+    </section>
+
+    <button onclick="goBack()">Go Back</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
